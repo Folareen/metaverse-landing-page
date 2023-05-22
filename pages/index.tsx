@@ -1,4 +1,5 @@
 import Header from '@/components/Header'
+import HeroSection from '@/components/HeroSection'
 import Head from 'next/head'
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <link rel="icon" href="/logo.png" />
       </Head>
       <Header />
+      <HeroSection />
     </>
   )
 }
