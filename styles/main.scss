@@ -84,8 +84,7 @@ body {
     top: 80px;
     left: -100%;
     transition: all 0.5s ease-in-out;
-  background: linear-gradient(to bottom, rgba(21, 25, 72, 0.95), rgba(46, 23, 103, 0.95));
-  
+    background: linear-gradient(to bottom, rgba(21, 25, 72, 0.95), rgba(46, 23, 103, 0.95));
     height: 100vh;
 
     &.active {
@@ -95,6 +94,7 @@ body {
     transform: translateX(-50%);
     text-align: center;
 
+
     @include tablet() {
       max-width: 580px;
       position: relative;
@@ -103,6 +103,8 @@ body {
       top: unset;
       left: unset;
       transform: unset;
+      background: unset;
+      height: unset;
     }
 
     @include desktop() {
@@ -193,7 +195,7 @@ body {
     color: white;
     font-family: poppins, sans-serif;
 
-    @include mini-tablet(){
+    @include mini-tablet() {
       width: 80%;
     }
 
@@ -301,8 +303,7 @@ body {
       height: 100%;
       object-fit: contain;
 
-      @include tablet() {
-      }
+      @include tablet() {}
 
       @include desktop() {
         transform: scale(1.001);
