@@ -127,6 +127,7 @@
 
   &__image {
     width: 100%;
+    overflow: hidden;
 
     img {
       width: 100%;
@@ -137,7 +138,7 @@
 
       @include desktop() {
         transform: scale(1.001);
-        margin-top: -80px;
+        margin-top: -20px;
       }
 
     }

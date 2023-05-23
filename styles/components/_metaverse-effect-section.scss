@@ -1,5 +1,12 @@
 .metaverse-effect-section {
-    margin-top: 40px;
+    margin-top: 50px;
+
+    @include tablet(){
+        margin-top: 75px;
+    }
+    @include tablet(){
+        margin-top: 150px;
+    }
 
     .heading {
         background: linear-gradient(to right, #69EACB, #EACCF8, #6654F1);
