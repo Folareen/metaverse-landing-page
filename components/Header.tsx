@@ -17,6 +17,7 @@ const Header = () => {
                         <a href="#" key={index} className='nav__link'>{link}</a>
                     ))
                 }
+
             </nav>
             <button className={`hamburger ${isNavActive ? 'active' : ''}`} onClick={() => {
                 setIsNavActive((prev) => (!prev))
