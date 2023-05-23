@@ -6,7 +6,7 @@ import SectionHeading from './SectionHeading'
 const MetaverseEffectSection = () => {
     return (
         <Container className='metaverse-effect-section'>
-            <SectionHeading className='heading'>
+            <SectionHeading >
                 Metaverse Effect
             </SectionHeading>
             <div className='body'>
