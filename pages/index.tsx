@@ -1,6 +1,7 @@
 import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
 import MetaverseEffectSection from '@/components/MetaverseEffectSection'
+import MetaverseEvolutionSection from '@/components/MetaverseEvolutionSection'
 import Head from 'next/head'
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <MetaverseEffectSection />
+      <MetaverseEvolutionSection />
     </>
   )
 }
