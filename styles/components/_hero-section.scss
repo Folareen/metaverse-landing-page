@@ -1,0 +1,165 @@
+.hero-section {
+  display: flex;
+  flex-direction: column-reverse;
+  min-height: calc(100vh - 100px);
+  padding: 0 20px;
+
+  @include mini-tablet() {
+    flex-direction: row;
+  }
+
+  @include tablet() {
+    margin-top: 80px;
+    flex-direction: row;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  @include desktop() {
+    padding: 0 0 40px 100px;
+  }
+
+  &__content {
+    width: 100%;
+    height: 50%;
+    color: white;
+    font-family: poppins, sans-serif;
+
+    @include mini-tablet() {
+      width: 80%;
+    }
+
+    @include tablet() {
+      width: 50%;
+      height: max-content;
+    }
+
+    .title {
+      font-weight: 500;
+      font-size: 35px;
+      color: white;
+
+
+      @include tablet() {
+        font-size: 60px;
+        line-height: 70px;
+      }
+
+      @include desktop() {
+        font-size: 70px;
+        line-height: 86px;
+      }
+
+      .highlight {
+        background-image: linear-gradient(to right, #69EACB, #EACCF8, #6654F1);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        font-style: italic;
+      }
+    }
+
+    .description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: capitalize;
+
+      @include mini-tablet() {
+        width: 70%;
+      }
+
+      @include tablet() {
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+      @include desktop() {
+        font-size: 22px;
+        width: 70%;
+      }
+    }
+
+    .cta-buttons {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+
+      >button {
+        padding: 8px 32px;
+        border-radius: 10px;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+
+        @include tablet() {
+          padding: 10px 54px;
+          font-size: 18px;
+          border-radius: 15px;
+
+        }
+
+        @include desktop() {
+          font-size: 24px;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .explore-btn {
+        border: none;
+        outline: none;
+        background: #2F80ED;
+      }
+    }
+
+    .benefits-btn {
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      margin-left: 20px;
+      background: transparent;
+    }
+
+  }
+
+  &__image {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+
+      @include tablet() {}
+
+      @include desktop() {
+        transform: scale(1.001);
+        margin-top: -80px;
+      }
+
+    }
+
+    @include mini-tablet() {
+      display: flex;
+      align-items: flex-start;
+      overflow: hidden;
+      height: max-content;
+      max-height: 100%;
+      width: 90%;
+      margin-left: -20%;
+    }
+
+    @include tablet() {
+      width: 70%;
+      height: calc(100vh - 100px);
+    }
+
+    @include desktop() {
+      width: 80%;
+      height: 100%;
+    }
+  }
+}
