@@ -1,13 +1,14 @@
 import React from 'react'
 import Container from './Container'
 import MetaverseIcon from './MetaverseIcon'
+import SectionHeading from './SectionHeading'
 
 const MetaverseEffectSection = () => {
     return (
         <Container className='metaverse-effect-section'>
-            <h2 className='heading'>
+            <SectionHeading className='heading'>
                 Metaverse Effect
-            </h2>
+            </SectionHeading>
             <div className='body'>
                 <div className='body__content'>
                     <div className='title-box'>
