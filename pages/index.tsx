@@ -1,5 +1,6 @@
 import BooksAboutMetaverse from '@/components/BooksAboutMetaverse'
 import DesignerNote from '@/components/DesignerNote'
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
 import MetaverseAnalysisSection from '@/components/MetaverseAnalysisSection'
@@ -28,6 +29,7 @@ export default function Home() {
       <TopQuotesSection />
       <BooksAboutMetaverse />
       <DesignerNote />
+      <Footer />
     </>
   )
 }
