@@ -1,5 +1,6 @@
 import React from 'react'
 import SectionHeading from '../SectionHeading'
+import SeeMoreBtn from '../SeeMoreBtn'
 import Carousel from './Carousel'
 
 const TopStoriesSection = () => {
@@ -9,6 +10,7 @@ const TopStoriesSection = () => {
                 Top Stories On Metaverse
             </SectionHeading>
             <Carousel />
+            <SeeMoreBtn />
         </div>
     )
 }

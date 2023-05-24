@@ -33,6 +33,13 @@ body {
   }
 }
 
+button{
+  cursor: pointer
+}
+a{
+  cursor: pointer;
+}
+
 @import 'components/container';
 @import 'components/header';
 @import 'components/hero-section';
@@ -41,3 +48,4 @@ body {
 @import 'components/section-heading';
 @import 'components/metaverse-evolution-section';
 @import 'components/top-stories-section';
+@import 'components/see-more-btn';
