@@ -77,7 +77,7 @@ const Footer = () => {
 
             </footer>
             <p>
-                &copy; 2022 METAVERSE. all Right Reserved
+                &copy; 2022 METAVERSE. All Right Reserved
             </p>
         </Container>
     )

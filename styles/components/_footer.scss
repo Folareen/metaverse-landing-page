@@ -145,7 +145,19 @@
 
             .social-icons {
                 display: flex;
-                gap: 40px;
+                gap: 20px;
+
+                @include tablet(){
+                    gap: 40px;
+                }
+
+                img{
+                    transform: scale(0.7);
+
+                    @include tablet(){
+                        transform: scale(1);
+                    }
+                }
             }
 
         }
