@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
+import MetaverseAnalysisSection from '@/components/MetaverseAnalysisSection'
 import MetaverseEffectSection from '@/components/MetaverseEffectSection'
 import MetaverseEvolutionSection from '@/components/MetaverseEvolutionSection'
 import TopStoriesSection from '@/components/TopStoriesSection'
@@ -20,6 +21,7 @@ export default function Home() {
       <MetaverseEffectSection />
       <MetaverseEvolutionSection />
       <TopStoriesSection />
+      <MetaverseAnalysisSection />
     </>
   )
 }
