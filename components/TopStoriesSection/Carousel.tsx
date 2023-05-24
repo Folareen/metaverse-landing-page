@@ -70,9 +70,6 @@ const Carousel = () => {
                 </div>
             </div>
             <button className={`carousel__btn carousel__btn--next ${carouselPos < topCarouselWidth - topCarouselContainerWidth ? '' : 'disabled'}  `} onClick={() => {
-                console.log(topCarouselContainerRef.current.clientWidth)
-                console.log(carouselPos, topCarouselWidth, topCarouselContainerWidth, topCardWidth)
-
                 if (carouselPos < topCarouselWidth - (topCarouselContainerWidth + 56)
                 ) {
                     setCarouselPos(carouselPos + (topCardWidth) + 56)
