@@ -10,7 +10,7 @@
         @include mini-tablet() {
             margin-top: 30px;
             flex-direction: row;
-        align-items: center;
+            align-items: center;
         }
 
         @include desktop() {
@@ -19,6 +19,7 @@
 
         &__content {
             margin-top: 10px;
+
             .title-box {
                 display: flex;
                 align-items: center;
@@ -75,8 +76,10 @@
             width: 100%;
             display: flex;
             justify-content: center;
+            margin-top: 15px;
 
             @include mini-tablet() {
+                margin-top: unset;
                 margin-right: 30px;
                 min-width: 349px;
                 height: 318px;
