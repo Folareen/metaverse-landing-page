@@ -1,0 +1,19 @@
+.top-quotes-section {
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: max-content;
+        gap: 30px;
+        margin-top: 20px;
+
+        @include tablet{
+            gap: 50px;
+        }
+        @include desktop(){
+            gap: 70px;
+        }
+    }
+}

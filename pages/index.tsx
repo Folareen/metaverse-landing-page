@@ -3,6 +3,7 @@ import HeroSection from '@/components/HeroSection'
 import MetaverseAnalysisSection from '@/components/MetaverseAnalysisSection'
 import MetaverseEffectSection from '@/components/MetaverseEffectSection'
 import MetaverseEvolutionSection from '@/components/MetaverseEvolutionSection'
+import TopQuotesSection from '@/components/TopQuotesSection'
 import TopStoriesSection from '@/components/TopStoriesSection'
 import Head from 'next/head'
 
@@ -22,6 +23,7 @@ export default function Home() {
       <MetaverseEvolutionSection />
       <TopStoriesSection />
       <MetaverseAnalysisSection />
+      <TopQuotesSection />
     </>
   )
 }
