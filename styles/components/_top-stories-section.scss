@@ -1,0 +1,182 @@
+.carousel-parent {
+    position: relative;
+}
+
+.carousel {
+    gap: 8px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+
+    @include tablet() {
+        margin-top: 30px;
+    }
+
+    @include desktop() {
+        margin-top: 50px;
+    }
+
+
+    &__btn {
+        font-weight: bold;
+        border-radius: 50%;
+        border: 1.4px solid rgba(255, 255, 255, 0.24);
+        background-color: #110F2D;
+        padding: 12px 15px;
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        z-index: 3;
+
+        @include desktop() {
+            padding: 16px 20px;
+            font-size: 20px;
+        }
+
+        i {
+            font-size: 20px;
+            color: white;
+
+            @include tablet() {
+                font-size: 30px;
+            }
+        }
+
+        &.disabled {
+            background-color: rgba(17, 15, 45, 0.2);
+
+
+            i {
+                color: rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        &--prev {
+            left: 20px;
+
+            @include tablet() {
+                left: 60px
+            }
+        }
+
+        &--next {
+            right: 20px;
+
+            @include tablet() {
+                right: 60px
+            }
+        }
+    }
+
+    &__container {
+        flex: 1;
+        overflow-x: hidden;
+
+        .content {
+            padding: 4px;
+            gap: 56px;
+            display: flex;
+            flex-direction: row;
+            width: max-content;
+            transition-property: transform;
+            transition-duration: 0.5s;
+            max-height: 100%;
+        }
+    }
+
+}
+
+.top-card {
+    border-color: #EACCF8;
+    border-width: 1px;
+    border-style: solid;
+    color: white;
+    border-radius: 20px;
+    height: 100%;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    @include tablet(){
+        width: 400px;
+    }
+
+    &__img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__content {
+        padding: 8px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        flex: 1;
+
+        >div {
+            display: flex;
+            align-items: center;
+
+
+            >img {
+                width: 10px;
+                height: 10px;
+
+                @include tablet() {
+                    width: 15px;
+                    height: 15px;
+                }
+
+                @include desktop() {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                color: #FFFFFF;
+                margin-left: 5px;
+
+                @include tablet() {
+                    font-size: 18px;
+                }
+
+                @include tablet() {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        >p {
+            font-family: 'Poppins';
+            color: #FFFFFF;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            word-break: keep-all;
+
+            @include tablet() {
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            @include desktop() {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}
