@@ -13,7 +13,7 @@ export default function Home() {
         <meta name="description" content="Metaverse" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
-        <script src="https://kit.fontawesome.com/5bf790ca36.js" ></script>
+        <script src="https://kit.fontawesome.com/5bf790ca36.js" crossOrigin="anonymous"></script>
       </Head>
       <Header />
       <HeroSection />
