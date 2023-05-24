@@ -1,3 +1,4 @@
+import BooksAboutMetaverse from '@/components/BooksAboutMetaverse'
 import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
 import MetaverseAnalysisSection from '@/components/MetaverseAnalysisSection'
@@ -24,6 +25,7 @@ export default function Home() {
       <TopStoriesSection />
       <MetaverseAnalysisSection />
       <TopQuotesSection />
+      <BooksAboutMetaverse />
     </>
   )
 }

@@ -1,11 +1,12 @@
 import React from 'react'
+import Container from './Container'
 import SectionHeading from './SectionHeading'
 import SeeMoreBtn from './SeeMoreBtn'
 import TopCard from './TopCard'
 
 const TopQuotesSection = () => {
     return (
-        <div className='top-quotes-section'>
+        <Container className='top-quotes-section'>
             <SectionHeading>
                 Top Quotes About Metaverse
             </SectionHeading>
@@ -38,7 +39,7 @@ const TopQuotesSection = () => {
                 }
             </div>
             <SeeMoreBtn />
-        </div>
+        </Container>
     )
 }
 

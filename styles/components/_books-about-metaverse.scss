@@ -1,0 +1,47 @@
+.books-about-metaverse {
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+
+        @include tablet{
+            gap: 50px;
+        }
+        @include desktop(){
+            gap: 70px;
+        }
+
+        .card {
+            
+
+            &__image{
+                width: 276px;
+                height: 411px;
+
+                @include desktop(){
+                    width: 368px;
+                    height: 548px;
+                }
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            a {
+                font-family: 'Poppins';
+                font-weight: 500;
+                font-size: 20px;
+                text-decoration-line: underline;
+                color: white;
+            }
+
+            
+        }
+    }
+}
