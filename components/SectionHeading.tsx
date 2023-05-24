@@ -2,7 +2,7 @@ import React from 'react'
 
 type SectionHeadingProps = {
     children: React.ReactNode,
-    className?: String
+    className?: string
 }
 
 const SectionHeading = ({ className, children }: SectionHeadingProps) => {
